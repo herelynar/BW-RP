@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BW RP | Roleplay</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #05070d;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(7, 11, 20, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #0d1b2a;
+    z-index: 1000;
+}
+
+nav h1 {
+    color: #4da3ff;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: #ccc;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4da3ff;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at top, #0a1a33, #05070d);
+}
+
+.hero h2 {
+    font-size: 70px;
+    color: #4da3ff;
+    animation: glow 2s infinite alternate;
+}
+
+.hero p {
+    color: #aaa;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 14px 30px;
+    border: none;
+    background: #4da3ff;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #4da3ff;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 280px;
+    padding: 25px;
+    background: #0b1220;
+    border: 1px solid #13243a;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #4da3ff;
+}
+
+.card h3 {
+    color: #4da3ff;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #070b14;
+    color: #666;
+    border-top: 1px solid #0d1b2a;
+}
+
+/* ANIMATION */
+@keyframes glow {
+    from { text-shadow: 0 0 10px #4da3ff; }
+    to { text-shadow: 0 0 25px #4da3ff; }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>BW RP</h1>
+    <div>
+        <a href="#">Ana Sayfa</a>
+        <a href="#">Kurallar</a>
+        <a href="#">Discord</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h2>BW ROLEPLAY</h2>
+    <p>Gerçekçi FiveM Roleplay deneyimine hoş geldin</p>
+    <button class="btn">Sunucuya Katıl</button>
+</div>
+
+<div class="section">
+    <h2>ÖZELLİKLER</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Ekonomi Sistemi</h3>
+            <p>Dengeli, gerçekçi ve sürdürülebilir ekonomi.</p>
+        </div>
+
+        <div class="card">
+            <h3>Roleplay Kalitesi</h3>
+            <p>Ciddi RP, kaliteli senaryolar ve aktif yönetim.</p>
+        </div>
+
+        <div class="card">
+            <h3>Aktif Yönetim</h3>
+            <p>7/24 destek ve profesyonel ekip.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>TOPLULUK</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Discord</h3>
+            <p>Topluluğa katıl ve başvurunu yap.</p>
+        </div>
+
+        <div class="card">
+            <h3>Whitelist</h3>
+            <p>Kaliteli oyuncular için başvuru sistemi.</p>
+        </div>
+
+        <div class="card">
+            <h3>Etkinlikler</h3>
+            <p>Haftalık RP etkinlikleri ve senaryolar.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2026 BW RP | Tüm hakları saklıdır
+</footer>
+
+</body>
+</html>
